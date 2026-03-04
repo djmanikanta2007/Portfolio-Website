@@ -258,6 +258,16 @@ const Home = () => {
                   <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
                   <p className="text-sm text-[#00e6ff] mb-2">{project.role}</p>
                   <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+                  {project.link && (
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs text-[#7b5cff] hover:text-[#00e6ff] underline mb-3 block break-all"
+                    >
+                      View on Instagram →
+                    </a>
+                  )}
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-500">{project.platform}</span>
                     <span className="text-xs text-[#7b5cff]">{project.views} views</span>

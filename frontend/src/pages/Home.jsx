@@ -199,7 +199,7 @@ const Home = () => {
 
               {/* Floating stats badge */}
               <div className="absolute -bottom-6 -left-6 glass-card border-white/10 rounded-2xl p-4 shadow-xl">
-                <p className="text-[#00e6ff] text-3xl font-bold">500+</p>
+                <p className="text-[#00e6ff] text-3xl font-bold">100+</p>
                 <p className="text-gray-400 text-sm">Projects Done</p>
               </div>
 

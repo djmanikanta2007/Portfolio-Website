@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
+import axios from 'axios';
 import {
   Play,
   Download,
@@ -33,6 +34,9 @@ import {
   contactInfo
 } from '@/mock';
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
+
 const Home = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,13 +51,23 @@ const Home = () => {
     ? portfolioProjects
     : portfolioProjects.filter(p => p.category === activeFilter);
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out! I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', projectType: '', message: '' });
+    try {
+      const response = await axios.post(`${API}/contact`, formData);
+      toast({
+        title: "Message Sent!",
+        description: response.data.message || "Thanks for reaching out! I'll get back to you soon.",
+      });
+      setFormData({ name: '', email: '', projectType: '', message: '' });
+    } catch (error) {
+      console.error('Contact form submission error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   const scrollToSection = (id) => {

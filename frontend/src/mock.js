@@ -94,7 +94,7 @@ export const services = [
     title: "Thumbnail Design",
     description: "Eye-catching thumbnails for Instagram & YouTube with high CTR optimization.",
     features: ["Custom designs", "Brand consistency", "A/B testing variants", "Fast delivery"],
-    pricing: "Starting ₹150/thumbnail"
+    pricing: "Starting ₹250/thumbnail • Monthly ₹3000"
   },
   {
     id: 4,

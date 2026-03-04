@@ -34,6 +34,39 @@ export const portfolioProjects = [
     tools: ["Premiere Pro", "After Effects"],
     description: "Educational content reels with engaging animations and clear visual storytelling for better retention. (Sample work)",
     link: "https://youtube.com/shorts/x_LcC9cC66U?si=M_Pn0PmzFGZmSdzd"
+  },
+  {
+    id: 4,
+    title: "Leh Palace Travel Thumbnail",
+    role: "Thumbnail Designer",
+    platform: "YouTube",
+    thumbnail: "https://customer-assets.emergentagent.com/job_manikanta-motion/artifacts/q3gwzm13_image.png",
+    category: "thumbnails",
+    views: "200K",
+    tools: ["Photoshop", "After Effects"],
+    description: "Eye-catching travel vlog thumbnail featuring 17th Century Leh Palace with bold typography and high CTR design."
+  },
+  {
+    id: 5,
+    title: "Raw Talks Podcast Thumbnail",
+    role: "Thumbnail Designer",
+    platform: "YouTube",
+    thumbnail: "https://customer-assets.emergentagent.com/job_manikanta-motion/artifacts/nlshwu5m_WhatsApp%20Image%202026-02-28%20at%2021.07.39.jpeg",
+    category: "thumbnails",
+    views: "150K",
+    tools: ["Photoshop"],
+    description: "Professional podcast thumbnail for 'Raw Talks with Vamsi Kurapati' featuring celebrity guest Brahmanandam with warm, engaging design."
+  },
+  {
+    id: 6,
+    title: "Khairatabad Ganesh Thumbnail",
+    role: "Thumbnail Designer",
+    platform: "YouTube",
+    thumbnail: "https://customer-assets.emergentagent.com/job_manikanta-motion/artifacts/vj5s50bl_WhatsApp%20Image%202026-02-28%20at%2021.10.36.jpeg",
+    category: "thumbnails",
+    views: "180K",
+    tools: ["Photoshop"],
+    description: "Bold Telugu language thumbnail for Khairatabad Ganesh festival video with vibrant colors and cultural elements."
   }
 ];
 

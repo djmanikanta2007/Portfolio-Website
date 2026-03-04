@@ -120,21 +120,21 @@ export const testimonials = [
     id: 1,
     name: "Ravi Kumar",
     role: "Food Vlogger",
-    content: "DJ's editing skills transformed my food vlogs. The color grading is incredible and he delivers fast!",
-    rating: 5
+    content: "DJ did a great job with my food vlogs. The color grading really made the food look appetizing! Delivered on time too. Will work with him again.",
+    rating: 4
   },
   {
     id: 2,
     name: "Priya Sharma",
     role: "Event Organizer",
-    content: "The college fest reel he created went viral! His motion graphics and timing are perfect.",
-    rating: 5
+    content: "Created our college fest reel and it actually went viral! The motion graphics were good, though took a couple of revisions to get it right. Overall happy with the work.",
+    rating: 4
   },
   {
     id: 3,
     name: "Arjun Reddy",
     role: "Small Business Owner",
-    content: "Professional work at student-friendly rates. Highly recommend for social media content!",
+    content: "Good work for the price. He's still learning but very responsive and willing to make changes. Perfect for social media content when you're on a budget.",
     rating: 5
   }
 ];

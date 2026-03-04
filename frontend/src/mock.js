@@ -20,7 +20,8 @@ export const portfolioProjects = [
     category: "video",
     views: "50K",
     tools: ["Premiere Pro", "Lightroom"],
-    description: "Ongoing series for local food creator with cinematic color grading and smooth B-roll editing."
+    description: "Ongoing series for local food creator with cinematic color grading and smooth B-roll editing. (Sample reel)",
+    link: "https://www.instagram.com/reel/DUUs7Z-Ejqu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     id: 3,

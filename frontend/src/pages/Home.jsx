@@ -225,7 +225,7 @@ const Home = () => {
 
           {/* Filter Chips */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {['all', 'video', 'short-film', 'photo-retouch', 'color-grade'].map((filter) => (
+            {['all', 'video', 'thumbnails', 'photo-retouch'].map((filter) => (
               <Button
                 key={filter}
                 variant={activeFilter === filter ? 'default' : 'outline'}

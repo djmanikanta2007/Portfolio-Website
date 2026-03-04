@@ -247,7 +247,9 @@ const Home = () => {
                   <img
                     src={project.thumbnail}
                     alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${
+                      project.category === 'thumbnails' ? 'h-auto' : 'h-64'
+                    }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     {project.link ? (

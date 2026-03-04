@@ -7,8 +7,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
 import axios from 'axios';
 import {
-  Play,
-  Download,
   Instagram,
   Linkedin,
   Youtube,
@@ -156,8 +154,7 @@ const Home = () => {
                 className="bg-gradient-to-r from-[#7b5cff] to-[#00e6ff] hover:opacity-90 px-8"
                 onClick={() => scrollToSection('work')}
               >
-                <Play className="mr-2" size={20} />
-                Watch Reel
+                View My Work
               </Button>
               <Button
                 size="lg"
@@ -165,7 +162,6 @@ const Home = () => {
                 className="border-[#00e6ff]/30 hover:bg-[#00e6ff]/10"
                 onClick={() => scrollToSection('contact')}
               >
-                <Download className="mr-2" size={20} />
                 Contact Me
               </Button>
             </div>
@@ -184,20 +180,33 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Showreel Placeholder */}
+          {/* Profile Photo */}
           <div className="relative animate-fade-in-delay">
-            <div className="glass-card rounded-2xl overflow-hidden border border-white/10">
-              <div className="aspect-video bg-gradient-to-br from-[#7b5cff]/20 to-[#00e6ff]/20 flex items-center justify-center relative group">
-                <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/8088373/pexels-photo-8088373.jpeg')] bg-cover bg-center opacity-30"></div>
-                <Button
-                  size="lg"
-                  className="relative z-10 rounded-full w-20 h-20 bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 group-hover:scale-110 transition-transform"
-                >
-                  <Play className="text-white" size={32} />
-                </Button>
+            <div className="relative">
+              {/* Decorative gradient circle behind photo */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#7b5cff]/30 to-[#00e6ff]/30 rounded-full blur-3xl transform scale-110"></div>
+              
+              {/* Main profile image */}
+              <div className="relative rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_manikanta-motion/artifacts/rkl927k2_IMG_2703%20%281%29.jpg" 
+                  alt="DJ Manikanta"
+                  className="w-full h-auto object-cover"
+                />
+                {/* Gradient overlay at bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#07071a] to-transparent"></div>
               </div>
-              <div className="p-4 bg-white/5 backdrop-blur-sm">
-                <p className="text-sm text-gray-400">Showreel • 00:15</p>
+
+              {/* Floating stats badge */}
+              <div className="absolute -bottom-6 -left-6 glass-card border-white/10 rounded-2xl p-4 shadow-xl">
+                <p className="text-[#00e6ff] text-3xl font-bold">500+</p>
+                <p className="text-gray-400 text-sm">Projects Done</p>
+              </div>
+
+              {/* Floating experience badge */}
+              <div className="absolute -top-6 -right-6 glass-card border-white/10 rounded-2xl p-4 shadow-xl">
+                <p className="text-[#7b5cff] text-3xl font-bold">3+</p>
+                <p className="text-gray-400 text-sm">Years Experience</p>
               </div>
             </div>
           </div>

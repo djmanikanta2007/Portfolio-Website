@@ -23,14 +23,14 @@ export const portfolioProjects = [
   },
   {
     id: 3,
-    title: "Brand Identity Animation",
-    role: "Motion Designer",
-    platform: "Commercial",
+    title: "Emotional Short Film",
+    role: "Editor, Color Grading",
+    platform: "Film Festival",
     thumbnail: "https://images.pexels.com/photos/8102677/pexels-photo-8102677.jpeg",
-    category: "motion-graphics",
+    category: "short-film",
     views: "30K",
-    tools: ["After Effects"],
-    description: "Animated logo reveal and brand elements for a local startup's social media launch."
+    tools: ["Premiere Pro", "DaVinci Resolve"],
+    description: "Complete editing and color grading for a 15-minute emotional drama short film submitted to film festivals."
   },
   {
     id: 4,
@@ -56,14 +56,14 @@ export const portfolioProjects = [
   },
   {
     id: 6,
-    title: "Event Highlight Package",
-    role: "Editor, Motion Graphics",
-    platform: "Instagram",
+    title: "Documentary Short Film",
+    role: "Editor, Sound Design",
+    platform: "YouTube",
     thumbnail: "https://images.pexels.com/photos/240566/pexels-photo-240566.jpeg",
-    category: "video",
+    category: "short-film",
     views: "45K",
     tools: ["Premiere Pro", "After Effects"],
-    description: "Fast-paced event highlights with dynamic text animations and transitions."
+    description: "Edited documentary-style short film with interview cuts, B-roll integration, and narrative pacing."
   }
 ];
 
@@ -84,20 +84,27 @@ export const services = [
   },
   {
     id: 2,
-    title: "Motion Graphics",
-    description: "Eye-catching animations, logo reveals, and text animations.",
-    features: ["Logo animations", "Text animations", "Lower thirds", "Social media graphics"],
-    pricing: "Starting ₹800/project"
+    title: "Short Film Editing",
+    description: "Professional short film editing with cinematic storytelling and pacing.",
+    features: ["Narrative editing", "Color grading", "Sound design", "Festival-ready output"],
+    pricing: "Starting ₹2000/project"
   },
   {
     id: 3,
+    title: "Thumbnail Design",
+    description: "Eye-catching thumbnails for Instagram & YouTube with high CTR optimization.",
+    features: ["Custom designs", "Brand consistency", "A/B testing variants", "Fast delivery"],
+    pricing: "Starting ₹150/thumbnail"
+  },
+  {
+    id: 4,
     title: "Color Grading",
     description: "Cinematic color correction and grading for professional look.",
     features: ["Cinematic LUTs", "Color matching", "Mood enhancement", "Skin tone correction"],
     pricing: "Starting ₹600/project"
   },
   {
-    id: 4,
+    id: 5,
     title: "Photo Editing",
     description: "Professional retouching, color correction, and enhancement.",
     features: ["Portrait retouching", "Product photos", "Background removal", "Color enhancement"],

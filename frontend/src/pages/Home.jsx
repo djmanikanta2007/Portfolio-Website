@@ -216,7 +216,7 @@ const Home = () => {
 
           {/* Filter Chips */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {['all', 'video', 'motion-graphics', 'photo-retouch', 'color-grade'].map((filter) => (
+            {['all', 'video', 'short-film', 'photo-retouch', 'color-grade'].map((filter) => (
               <Button
                 key={filter}
                 variant={activeFilter === filter ? 'default' : 'outline'}
@@ -314,7 +314,7 @@ const Home = () => {
             <p className="text-gray-400 text-lg">What I can do for you</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <Card key={service.id} className="glass-card border-white/10 p-6 hover:border-[#7b5cff]/50 transition-all">
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>

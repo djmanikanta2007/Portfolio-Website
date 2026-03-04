@@ -24,47 +24,15 @@ export const portfolioProjects = [
   },
   {
     id: 3,
-    title: "Emotional Short Film",
-    role: "Editor, Color Grading",
-    platform: "Film Festival",
+    title: "Education Reels",
+    role: "Video Editor, Motion Graphics",
+    platform: "YouTube Shorts",
     thumbnail: "https://images.pexels.com/photos/8102677/pexels-photo-8102677.jpeg",
-    category: "short-film",
-    views: "30K",
-    tools: ["Premiere Pro", "DaVinci Resolve"],
-    description: "Complete editing and color grading for a 15-minute emotional drama short film submitted to film festivals."
-  },
-  {
-    id: 4,
-    title: "Product Photography Edit",
-    role: "Photo Retoucher",
-    platform: "E-commerce",
-    thumbnail: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg",
-    category: "photo-retouch",
-    views: "15K",
-    tools: ["Photoshop", "Lightroom"],
-    description: "Complete retouching and color correction for e-commerce product catalog."
-  },
-  {
-    id: 5,
-    title: "Music Video Edit",
-    role: "Editor, Color Grade",
-    platform: "YouTube",
-    thumbnail: "https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg",
-    category: "color-grade",
-    views: "80K",
-    tools: ["Premiere Pro", "DaVinci Resolve"],
-    description: "Cinematic music video with advanced color grading and rhythm-synced cuts."
-  },
-  {
-    id: 6,
-    title: "Documentary Short Film",
-    role: "Editor, Sound Design",
-    platform: "YouTube",
-    thumbnail: "https://images.pexels.com/photos/240566/pexels-photo-240566.jpeg",
-    category: "short-film",
-    views: "45K",
+    category: "video",
+    views: "75K",
     tools: ["Premiere Pro", "After Effects"],
-    description: "Edited documentary-style short film with interview cuts, B-roll integration, and narrative pacing."
+    description: "Educational content reels with engaging animations and clear visual storytelling for better retention. (Sample work)",
+    link: "https://youtube.com/shorts/x_LcC9cC66U?si=M_Pn0PmzFGZmSdzd"
   }
 ];
 

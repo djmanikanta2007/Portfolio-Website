@@ -265,7 +265,9 @@ const Home = () => {
                       rel="noopener noreferrer"
                       className="text-xs text-[#7b5cff] hover:text-[#00e6ff] underline mb-3 block break-all"
                     >
-                      View on Instagram →
+                      {project.link.includes('youtube.com') || project.link.includes('youtu.be') 
+                        ? 'View on YouTube →' 
+                        : 'View on Instagram →'}
                     </a>
                   )}
                   <div className="flex items-center justify-between">

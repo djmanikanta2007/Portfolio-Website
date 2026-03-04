@@ -286,6 +286,18 @@ frontend:
           agent: "testing"
           comment: "✅ No console errors detected during testing. All network requests successful. Both POST requests to /api/contact returned successful responses. No JavaScript errors or warnings."
 
+  - task: "Instagram Link Redirect - College Fest Viral Reel"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/Home.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "✅ Instagram link redirect working perfectly. Anchor tag properly wraps the 'View Project' button with correct attributes: href='https://www.instagram.com/reel/DLRgxfoRcLu/?igsh=MWVodGRuY3hueTd0Mw==', target='_blank', rel='noopener noreferrer'. Clicking the button successfully opens Instagram reel in a new tab. No console errors. All security best practices implemented."
+
 metadata:
   created_by: "testing_agent"
   version: "2.0"
@@ -295,6 +307,7 @@ metadata:
 test_plan:
   current_focus:
     - "All backend and frontend tests completed successfully"
+    - "Instagram link redirect verified and working"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
@@ -304,3 +317,5 @@ agent_communication:
       message: "✅ COMPREHENSIVE BACKEND TESTING COMPLETE: All 6 backend API tests passed successfully. Health check, contact form submission, data retrieval, email validation, multiple submissions, and timestamp format all working perfectly. Backend is fully functional and ready for production use. MongoDB integration working correctly with proper data persistence."
     - agent: "testing"
       message: "✅ COMPREHENSIVE FRONTEND TESTING COMPLETE: All 9 frontend tasks tested and working perfectly. Hero section loads correctly, desktop and mobile navigation working, portfolio filters functional, contact form submission with toast notifications working, form validation working, responsive design tested (desktop/tablet/mobile), hover effects working, no console errors. Both contact form submissions successful with proper API integration. Application is fully functional and ready for production."
+    - agent: "testing"
+      message: "✅ INSTAGRAM LINK REDIRECT TEST COMPLETE: User requested specific test for 'College Fest Viral Reel' Instagram link redirect. Verified that: (1) Anchor tag properly wraps the 'View Project' button, (2) href attribute is correct: https://www.instagram.com/reel/DLRgxfoRcLu/?igsh=MWVodGRuY3hueTd0Mw==, (3) target='_blank' attribute is set (opens in new tab), (4) rel='noopener noreferrer' for security, (5) Clicking opens Instagram reel in new tab successfully, (6) No console errors detected. Feature is working perfectly with all security best practices implemented."

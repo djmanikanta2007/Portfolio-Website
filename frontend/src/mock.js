@@ -80,7 +80,7 @@ export const services = [
     title: "Video Editing",
     description: "Reels, YouTube videos, and long-form content with fast turnaround.",
     features: ["Social media reels", "YouTube videos", "Event coverage", "Vlogs & tutorials"],
-    pricing: "Starting ₹500/video"
+    pricing: "Starting ₹900/video (per 5 mins) • Reel without motion graphics ₹300 • Reel with motion graphics ₹500 • Monthly depends on work"
   },
   {
     id: 2,

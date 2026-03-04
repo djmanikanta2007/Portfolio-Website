@@ -8,7 +8,8 @@ export const portfolioProjects = [
     category: "video",
     views: "125K",
     tools: ["Premiere Pro", "After Effects"],
-    description: "Created a high-energy fest highlight reel that went viral, showcasing dynamic transitions and motion graphics."
+    description: "Created a high-energy fest highlight reel that went viral, showcasing dynamic transitions and motion graphics. (Sample work)",
+    link: "https://www.instagram.com/reel/DLRgxfoRcLu/?igsh=MWVodGRuY3hueTd0Mw=="
   },
   {
     id: 2,

@@ -241,9 +241,17 @@ const Home = () => {
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <Button size="sm" className="bg-white/20 backdrop-blur-md hover:bg-white/30">
-                      View Project <ExternalLink size={16} className="ml-2" />
-                    </Button>
+                    {project.link ? (
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="bg-white/20 backdrop-blur-md hover:bg-white/30">
+                          View Project <ExternalLink size={16} className="ml-2" />
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button size="sm" className="bg-white/20 backdrop-blur-md hover:bg-white/30">
+                        View Project <ExternalLink size={16} className="ml-2" />
+                      </Button>
+                    )}
                   </div>
                 </div>
                 <div className="p-6">

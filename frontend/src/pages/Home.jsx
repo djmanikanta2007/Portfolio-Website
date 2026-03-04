@@ -247,7 +247,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
                   <p className="text-sm text-[#00e6ff] mb-2">{project.role}</p>
                   <p className="text-gray-400 text-sm mb-4">{project.description}</p>
                   <div className="flex items-center justify-between">
@@ -295,7 +295,7 @@ const Home = () => {
                 </div>
                 <p className="text-gray-300 mb-4 italic">"{testimonial.content}"</p>
                 <div>
-                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="font-semibold text-white">{testimonial.name}</p>
                   <p className="text-sm text-gray-400">{testimonial.role}</p>
                 </div>
               </Card>
@@ -317,7 +317,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <Card key={service.id} className="glass-card border-white/10 p-6 hover:border-[#7b5cff]/50 transition-all">
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
                 <p className="text-gray-400 text-sm mb-4">{service.description}</p>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
@@ -327,7 +327,7 @@ const Home = () => {
                     </li>
                   ))}
                 </ul>
-                <p className="text-[#7b5cff] font-semibold">{service.pricing}</p>
+                <p className="text-[#00e6ff] font-semibold text-sm">{service.pricing}</p>
               </Card>
             ))}
           </div>
@@ -385,7 +385,7 @@ const Home = () => {
             {/* Contact Info */}
             <div className="space-y-6">
               <Card className="glass-card border-white/10 p-6">
-                <h3 className="font-bold text-xl mb-4">Contact Information</h3>
+                <h3 className="font-bold text-xl mb-4 text-white">Contact Information</h3>
                 <div className="space-y-4">
                   <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-3 text-gray-300 hover:text-[#00e6ff] transition-colors">
                     <Mail size={20} className="text-[#7b5cff]" />
@@ -399,15 +399,15 @@ const Home = () => {
               </Card>
 
               <Card className="glass-card border-white/10 p-6">
-                <h3 className="font-bold text-xl mb-4">Quick Connect</h3>
+                <h3 className="font-bold text-xl mb-4 text-white">Quick Connect</h3>
                 <div className="flex gap-3">
                   <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer" className="flex-1 p-4 rounded-lg bg-white/5 hover:bg-[#7b5cff]/20 border border-white/10 hover:border-[#7b5cff]/50 transition-all text-center">
-                    <Instagram className="mx-auto mb-2" size={24} />
-                    <p className="text-xs">Instagram</p>
+                    <Instagram className="mx-auto mb-2 text-white" size={24} />
+                    <p className="text-xs text-gray-300">Instagram</p>
                   </a>
                   <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" className="flex-1 p-4 rounded-lg bg-white/5 hover:bg-[#00e6ff]/20 border border-white/10 hover:border-[#00e6ff]/50 transition-all text-center">
-                    <Linkedin className="mx-auto mb-2" size={24} />
-                    <p className="text-xs">LinkedIn</p>
+                    <Linkedin className="mx-auto mb-2 text-white" size={24} />
+                    <p className="text-xs text-gray-300">LinkedIn</p>
                   </a>
                 </div>
               </Card>
